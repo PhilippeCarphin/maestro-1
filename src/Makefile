@@ -115,7 +115,7 @@ SeqNodeCensus.o: SeqNodeCensus.c SeqNodeCensus.h FlowVisitor.h
 tsvinfo.o: tsvinfo.c tsvinfo.h nodeinfo.o
 	$(CC) -c $< $(CFLAGS) $(WERROR_FLAGS) -I $(INCDIR) -I $(XML_INCLUDE_DIR)
 
-nodeinfo.o:	nodeinfo.c nodeinfo.h FlowVisitor.h runcontrollib.h ResourceVisitor.c ResourceVisitor.h
+nodeinfo.o:	nodeinfo.c nodeinfo.h FlowVisitor.h runcontrollib.h ResourceVisitor.h
 	$(CC) $(CFLAGS) $(WERROR_FLAGS) -I $(INCDIR) -I $(XML_INCLUDE_DIR) -c $<
 
 logreader.o:	logreader.c logreader.h logreader_main.c
